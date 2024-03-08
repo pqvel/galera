@@ -1,6 +1,83 @@
-<header class="header">
-  <nav>
-    <a href="/">Главная</a>
-    <a href="/portfolio">Портфолио</a>
+<header class="header navbar-light bg-light navbar-expand-lg">
+  <nav class="header__nav navbar">
+    <a class="navbar-brand" href="/">
+      <svg
+        width="70px"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 200 200"
+      >
+        <rect x="25" y="25" width="150" height="150" fill="#2ecc71" />
+        <circle cx="100" cy="100" r="70" fill="#fff" />
+        <text
+          x="100"
+          y="90"
+          font-family="Arial"
+          font-size="30"
+          fill="#2c3e50"
+          text-anchor="middle"
+        >
+          Web
+        </text>
+        <text
+          x="100"
+          y="120"
+          font-family="Arial"
+          font-size="30"
+          fill="#2c3e50"
+          text-anchor="middle"
+        >
+          Creation
+        </text>
+        <path d="M 50,150 L 100,190 L 150,150 Z" fill="#f39c12" />
+      </svg>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/portfolio">Портфолио</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/services">Услуги</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/company">О компании</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contacts">Контакты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/zakazsite">Заказать сайт</a>
+        </li>
+      </ul>
+    </div>
   </nav>
+  <div class="header__phone">
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 16 16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M8.379 10.544c.73-.733 1.432-1.435 2.165-2.165.932-.992 1.105-1.912.671-2.234l-.889-.513a1.163 1.163 0 01-.425-1.588l1.334-2.312a1.163 1.163 0 011.589-.425l.889.513c2.884 1.665-.464 7.013-1.864 8.413l-1.616 1.616c-1.4 1.4-6.748 4.748-8.413 1.864l-.513-.89a1.163 1.163 0 01.425-1.588L4.044 9.9a1.163 1.163 0 011.588.425l.514.89c.321.433 1.24.26 2.233-.672z"
+        fill="#000"
+      ></path>
+    </svg>
+    <span>Телефон: +375 (44) 510-51-62</span>
+  </div>
 </header>
