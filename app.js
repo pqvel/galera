@@ -1,3 +1,4 @@
+require("dotenv").config();
 var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
@@ -25,6 +26,8 @@ app.use("/", mainRouter);
 app.use(function (req, res, next) {
   next(createError(404));
 });
+
+console.log(process.env.LANGUAGE);
 
 // error handler
 app.use(function (err, req, res, next) {
