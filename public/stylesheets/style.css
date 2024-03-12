@@ -201,3 +201,12 @@ header {
 p {
   line-height: 1.7;
 }
+
+#pricing {
+  background-color: #f2f9ff;
+  padding-bottom: 40px;
+}
+
+.pricing-box {
+  background-color: white;
+}
